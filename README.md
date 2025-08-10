@@ -3,43 +3,35 @@
 这是一个基于Python的PDF拆分工具，可以根据xcel表里的信息,自动拆分PDF文档，把拆好的文件打包成压缩文件，方便管理和归档。
 
 ## 功能
-
 - 读取Excel文件中的档号、文件编号、起始页码和文件题名
 - 自动拆分对应PDF文件中的页面，生成独立的PDF文档
 - 将拆分后的PDF文件按档号打包成ZIP压缩包
 - 简单的图形界面，方便选择Excel和PDF文件
 - 自动安装所需的Python库
 
+## 安装指南
+1. 请先从 [Python 官网](https://www.python.org/downloads/) 下载并安装 Python 3.7 或更高版本，安装时请务必勾选“Add Python to PATH”选项。  
+2. 下载并解压本项目到一个文件夹中。  
+3. 打开命令行，进入项目文件夹，运行以下命令安装依赖库：
+
+   ```bash
+   pip install -r requirements.txt
+
+4. 运行 run.bat 文件启动程序（双击即可）
+
 ## 快速开始
-
-1. 解压 ZIP 文件到一个文件夹中。  
-2. 点击运行解压出来的 Python 安装程序（.exe）来安装 Python，安装时务必勾选安装 pip。  
-3. 安装完成后，双击运行解压出来的 `run.bat` 文件（齿轮图标的文件）。  
-
 首次使用时，点击“安装配置”按钮安装必要的 Python 库。  
 点击“文档处理”按钮，选择对应的目录文件（Excel）和需要拆分的文件（PDF）。  
 点击“拆分文档”按钮执行 PDF 拆分和重命名操作。  
 使用“打开文件”按钮查看输出结果。  
-
 拆分后的 PDF 文件和 ZIP 文件会保存在用户“文档”文件夹下的 `PDF_Splitter_Output` 子文件夹中。
 
-## 依赖库
 
-- pandas
-- PyPDF2
-- openpyxl
-
-你可以使用以下命令安装依赖库：
-
-```bash
-pip install -r requirements.txt
-
-
-免责声明
+## 免责声明
 本工具免费提供，按“原样”提供，不保证任何功能的完整性和准确性。使用过程中出现的问题请自行负责。
 
-作者
+## 作者
 Testing-systems
 
-许可证
+## 许可证
 本项目使用MIT许可证，详情见 LICENSE.txt 文件。
